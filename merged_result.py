@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Specify the path to the folder containing the Excel files
-folder_path = r'C:\Users\...\Employee Master Data Workday'  # replace with your actual path
+folder_path = r 'C:\Users\VIRIKMA\OneDrive - Anheuser-Busch InBev\My Documents\Мои полученные файлы\7. EUR - LoA\5. Analytics\1. 1Y plan\Data\Employee Master Data Workday'
 
 # Get a list of all Excel files in the folder
 files = [f for f in os.listdir(folder_path) if f.endswith('.xlsx')]
