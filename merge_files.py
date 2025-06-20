@@ -3,8 +3,9 @@ import pandas as pd
 from datetime import datetime
 
 # --- CONFIGURABLE PATHS ---
-source_folder = os.path.join(os.getcwd(), 'data')  # Excel files should be in ./data/
-output_folder = os.getcwd()  # Output will be in the current script folder
+script_dir = os.path.dirname(os.path.abspath(__file__))
+source_folder = os.path.join(script_dir, 'data')  # Excel files should be in ./data/
+output_folder = script_dir                        # Output will be in the same folder as the script
 
 # Prepare output file name
 base_filename = 'merged_result.xlsx'
