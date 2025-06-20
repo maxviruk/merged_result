@@ -1,6 +1,11 @@
 import os
 import pandas as pd
 from datetime import datetime
+import warnings
+
+
+# Suppress openpyxl style warning
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # --- CONFIGURABLE PATHS ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
